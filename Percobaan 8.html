@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Meta tag untuk pengaturan charset dan responsivitas -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Menghubungkan Tailwind CSS dari CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- Container pertama untuk tampilan grid dengan kolom dan baris -->
+    <div class="container mx-auto px-4 py-4">
+      <!-- Judul bagian ini -->
+      <h1 class="tex-2xl font-bold text-blue-700">Awesome Cards</h1>
+      
+      <!-- Grid dengan 4 kolom dan 2 baris -->
+      <div class="grid grid-cols-4 grid-rows-2 gap-2">
+        
+        <!-- Kolom pertama: Menggunakan 4 kolom penuh (col-span-4) dan 1 baris -->
+        <div class="col-span-4 row-span-1 bg-blue-100 text-center p-4">
+          column 1
+        </div>
+        
+        <!-- Kolom kedua: Menggunakan 1 kolom dan 1 baris -->
+        <div class="col-span-1 row-span-1 bg-blue-100 text-center p-4">
+          column 2
+        </div>
+        
+        <!-- Kolom ketiga: Menggunakan 1 kolom dan 1 baris -->
+        <div class="col-span-1 row-span-1 bg-blue-100 text-center p-4">
+          column 3
+        </div>
+        
+        <!-- Kolom keempat: Menggunakan 1 kolom dan 1 baris -->
+        <div class="col-span-1 row-span-1 bg-blue-100 text-center p-4">
+          column 4
+        </div>
+        
+        <!-- Kolom kelima: Menggunakan 1 kolom dan 1 baris -->
+        <div class="col-span-1 row-span-1 bg-blue-100 text-center p-4">
+          column 5
+        </div>
+      </div>
+    </div>
+
+    <!-- Container kedua untuk grid dengan tampilan responsif -->
+    <div class="container mx-auto my-4">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 grid-rows-1 gap-2 flex justify-center">
+        
+        <!-- Kolom pertama dalam daftar grid: Card dengan gambar dan tombol -->
+        <div class="col-span-1 border-2 border-teal-400 row-span-1 bg-blue-100 text-center p-4">
+          <span>Column 1</span>
+          <img src="img/fate-trigger-the-3840x2160-19001.jpg" class="object-fill h-48 w-96 mx-auto">
+          <button class="mt-4 bg-teal-300 px-8 py-2 hover:bg-teal-400 text-white  transition duration-300 ease-in-out">Join us!</button>
+        </div>
+
+        <!-- Kolom kedua, ketiga, dan seterusnya dengan format yang sama -->
+        <div class="col-span-1 border-2 border-teal-400 row-span-1 bg-blue-100 text-center p-4">
+          <span>Column 1</span>
+          <img src="img/fate-trigger-the-3840x2160-19001.jpg" class="object-fill h-48 w-96 mx-auto">
+          <button class="mt-4 bg-teal-300 px-8 py-2 hover:bg-teal-400 text-white  transition duration-300 ease-in-out">Join us!</button>
+        </div>    
+
+        <div class="col-span-1 border-2 border-teal-400 row-span-1 bg-blue-100 text-center p-4">
+          <span>Column 1</span>
+          <img src="img/fate-trigger-the-3840x2160-19001.jpg" class="object-fill h-48 w-96 mx-auto">
+          <button class="mt-4 bg-teal-300 px-8 py-2 hover:bg-teal-400 text-white  transition duration-300 ease-in-out">Join us!</button>
+        </div>    
+
+        <div class="col-span-1 border-2 border-teal-400 row-span-1 bg-blue-100 text-center p-4">
+          <span>Column 1</span>
+          <img src="img/fate-trigger-the-3840x2160-19001.jpg" class="object-fill h-48 w-96 mx-auto">
+          <button class="mt-4 bg-teal-300 px-8 py-2 hover:bg-teal-400 text-white  transition duration-300 ease-in-out">Join us!</button>
+        </div>    
+
+        <div class="col-span-1 border-2 border-teal-400 row-span-1 bg-blue-100 text-center p-4">
+          <span>Column 1</span>
+          <img src="img/fate-trigger-the-3840x2160-19001.jpg" class="object-fill h-48 w-96 mx-auto">
+          <button class="mt-4 bg-teal-300 px-8 py-2 hover:bg-teal-400 text-white  transition duration-300 ease-in-out">Join us!</button>
+        </div>    
+
+      </div>
+    </div>
+
+    <!-- Container ketiga untuk harga -->
+    <div class="container mx-auto">
+      <!-- Judul daftar harga -->
+      <h2 class="text-center text-3xl my-10">Daftar Harga</h2>
+      
+      <!-- Flex container untuk menata tiga harga -->
+      <div class="flex gap-5 justify-center">
+        
+        <!-- Paket basic -->
+        <div class="bg-slate-50 w-80 p-5 mb-5 rounded-lg drop-shadow-lg">
+          <h2 class="text-center">basic</h2>
+          <div class="text-center p-5">
+            <span>Rp</span>
+            <span class="text-xl">340.000</span>
+          </div>
+          <ul>
+            <li>2GB storage</li>
+            <li>Unlimited bandwidth</li>
+            <li>Free Email</li>
+          </ul>
+        </div>
+
+        <!-- Paket medium -->
+        <div class="bg-slate-50 w-80 p-5 mb-5 rounded-lg drop-shadow-lg">
+          <h2 class="text-center">medium</h2>
+          <div class="text-center p-5">
+            <span>Rp</span>
+            <span class="text-xl">500.000</span>
+          </div>
+          <ul>
+            <li>2GB storage</li>
+            <li>Unlimited bandwidth</li>
+            <li>Free Email</li>
+          </ul>
+        </div>
+
+        <!-- Paket advanced -->
+        <div class="bg-slate-50 w-80 p-5 mb-5 rounded-lg drop-shadow-lg">
+          <h2 class="text-center">advanced</h2>
+          <div class="text-center p-5">
+            <span>Rp</span>
+            <span class="text-xl">1500.000</span>
+          </div>
+          <ul>
+            <li>2GB storage</li>
+            <li>Unlimited bandwidth</li>
+            <li>Free Email</li>
+          </ul>
+        </div>
+      </div>
+    </div>  
+
+  </body>
+</html>
